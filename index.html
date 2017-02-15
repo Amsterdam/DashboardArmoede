@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<script src="https://amsterdam.github.io/x3/v0.1/d3.min.js"></script>
+	<script src="https://amsterdam.github.io/x3/v0.1/x3.min.js"></script>
+	<script src="./assets/js/visualisaties/bereikh2.js"></script>
+	<script src="./assets/js/visualisaties/bereikh2_1_1.js"></script>
+	<script src="./assets/js/visualisaties/bereikh2_1_2.js"></script>
+	<script src="./assets/js/visualisaties/bereikh2_1_3.js"></script>
+	<script src="./assets/js/visualisaties/bereikh2_2_1.js"></script>
+	<script src="./assets/js/visualisaties/bereikh2_2_2.js"></script>
+	<script src="./assets/js/visualisaties/bereikh2_2_3.js"></script>
+	<script src="./assets/js/visualisaties/bereikh2_3_1.js"></script>
+	<script src="./assets/js/visualisaties/bereikh2_3_2.js"></script>
+	<script src="./assets/js/visualisaties/bereikh2_3_3.js"></script>
+	<script src="./assets/js/visualisaties/h1.js"></script>
+	<script src="./assets/js/visualisaties/kaart.js"></script>
+	<script src="./assets/js/visualisaties/p1.js"></script>
+	<script src="./assets/js/visualisaties/waarh2_1.js"></script>
+	<script src="./assets/js/visualisaties/waarh2_2.js"></script>
+	<script src="./assets/js/visualisaties/waarh2_3.js"></script>
+	<script src="./assets/js/visualisaties/waarh2_4.js"></script>
+	<script src="./assets/js/visualisaties/waarh3.js"></script>
+	<script src="./assets/js/visualisaties/waarp2.js"></script>
+	<script src="./assets/js/visualisaties/waarp3.js"></script>
+	<script src="./assets/js/visualisaties/waarh2.js"></script>
+	<script src="./assets/js/visualisaties/wath2.js"></script>
+	<script src="./assets/js/visualisaties/wieh2_1.js"></script>
+	<script src="./assets/js/visualisaties/wieh2_2.js"></script>
+	<script src="./assets/js/visualisaties/wieh2_3.js"></script>
+	<script src="./assets/js/visualisaties/wieh3.js"></script>
+	<script src="./assets/js/visualisaties/wiep2.js"></script>
+	<script src="./assets/js/visualisaties/wiep3_1.js"></script>
+	<script src="./assets/js/visualisaties/wiep3_2.js"></script>
+	<script src="./assets/js/visualisaties/wiep4_1.js"></script>
+	<script src="./assets/js/visualisaties/wiep4_2.js"></script>
+	<script src="./assets/js/visualisaties/wiep4_3.js"></script>
+	<script src="./assets/js/index.js"></script>
+	<link rel="icon" href="../../favicon.ico">
+    <title>Amsterdam armoede dashboard</title>
+	<style>
+body, html {
+	font-family: corbel;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+	</style>
+    <link href="./assets/css/index.css" rel="stylesheet">
+  </head>
+  <body>
+<div id="armoede">
+		<div id="navbar" class="navbar navbar-default">
+			<div class="container-full">
+				<ul class="nav navbar-nav">
+					<li class="icons">
+						<div class="persoon" title="Per persoon">&nbsp;</div>
+						<div class="huishouden" title="Per huishouden">&nbsp;</div>
+					</li>
+					<li class="wat"><a href="#">Wat</a></li>
+					<li class="waar"><a href="#">Waar</a></li>
+					<li class="wie"><a href="#about">Wie</a></li>
+					<li class="bereik"><a href="#contact">Bereik</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="wat page container-full">
+      <div class="row">
+        <div class="col-ois-480">
+          <h2>Per Huishouden<div class="pull-right icon info wsm">&nbsp;</div></h2>
+					<hr />
+					<div class="visualisatie wat huishouden wsm"></div>
+					<br />
+<p class="justify">Dit dashboard presenteert de belangrijkste cijfers over armoede in Amsterdam. De armoedegrens is in de hoofdstad 120% van het wettelijk sociaal minimum (WSM). In 2015 valt een huishouden onder de Amsterdamse armoedegrens als het van € 1.647 netto of minder per maand moet rondkomen. In 2013 leefde van alle Amsterdamse huishoudens 24% op of onder de armoedegrens. Dat aandeel is in de afgelopen jaren iets toegenomen, maar is in 2015 naar verwachting gestabiliseerd.</p><p class="justify">De gemeente Amsterdam ondersteunt huishoudens met een laag inkomen en weinig vermogen door hen zo veel mogelijk te activeren om de weg naar werk (terug) te vinden, maar ook door hun maatschappelijke participatie te stimuleren en hun inkomenspositie te versterken. De jaarlijkse Amsterdamse armoede-monitor is een belangrijk instrument om de bevolking met een laag inkomen in kaart te brengen en het helpt bij het signaleren van nieuwe risico’s. In dit dashboard worden de belangrijkste uitkomsten uitgelicht. <a href="http://www.ois.amsterdam.nl/pdf/2017_amsterdamse_armoedemonitor_2015.pdf">[klik voor volledig rapport]</a><p>
+        </div>
+        <div class="col-ois-480">
+					<h2>Ontwikkeling<div class="pull-right icon download">&nbsp;</div><div class="pull-right icon info ontwikkeling">&nbsp;</div></h2>
+					<hr />
+					<div class="visualisatie wat huishouden ontwikkeling perc"></div>
+					<br />
+					<div class="visualisatie wat huishouden ontwikkeling abs"></div>
+				</div>
+			</div>
+		</div>
+		<div class="waar persoon page container-full">
+      <div class="row">
+        <div class="col-ois-480">
+          <h2>Per Persoon<div class="pull-right icon info wsm">&nbsp;</div></h2>
+					<hr />
+					<div class="visualisatie waar persoon wsm"></div>
+					<br />
+<p class="justify">We leggen hier de focus op minderjarige kinderen die opgroeien in een huishouden met een laag inkomen. In Amsterdam zijn dat er twee keer zo veel als landelijk. Wel zien we dat het aandeel kinderen in huishoudens met een laag inkomen sinds 2008 is gestabiliseerd, in tegenstelling tot de landelijke ontwikkeling en die in Rotterdam en Den Haag.</p><p class="justify">In Amsterdam wonen kinderen tot en met 17 jaar die opgroeien in een huishouden met een laag inkomen vooral in Nieuw-West, Zuidoost en Noord. Ook binnen stadsdelen zijn er duidelijke verschillen tussen wijken. In de Kolenkit, de Van Galenbuurt en IJplein/Vogelbuurt leeft 40% van de jongeren in een arm gezin.<p>
+        </div>
+        <div class="col-ois-480">
+					<div class="row">
+						<h3>Kinderen in armoede<div class="pull-right icon download">&nbsp;</div><div class="pull-right icon info kinderen">&nbsp;</div></h3>
+						<hr />
+						<div class="visualisatie waar persoon jongeren"></div>
+						<br />
+					</div>
+					<div class="row">
+						<div>
+							<h3>Kinderen in Amsterdam<div class="pull-right icon info amsterdam">&nbsp;</div><div class="pull-right amsterdam icon abs">&nbsp;</div><div class="pull-right amsterdam icon perc">&nbsp;</div></h3>
+							<hr />
+							<div class="visualisatie waar persoon amsterdam"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-ois-480 col-ois-960">
+					<h3>Kinderen in armoede per wijk</h3>
+					<hr />
+					<div class="visualisatie waar persoon kaart"></div>
+					<br /><br /><br /><br />
+				</div>
+			</div>
+		</div>
+		<div class="waar huishouden page container-full">
+      <div class="row">
+        <div class="col-ois-480">
+          <h2>Per Huishouden<div class="pull-right icon info wsm">&nbsp;</div></h2>
+					<hr />
+					<div class="visualisatie waar huishouden wsm"></div>
+					<br />
+<p class="justify">Amsterdam heeft relatief veel huishoudens met een laag inkomen: acht procentpunt meer dan het landelijk aandeel. Alleen Rotterdam heeft relatief meer huishoudens met een laag inkomen.</p><p class="justify">Er zijn grote verschillen binnen Amsterdam. Er zijn vooral relatief veel huishoudens met een laag inkomen in Zuidoost, Noord en West. Ook binnen stadsdelen zijn er verschillen tussen wijken. In een aantal wijken wonen relatief veel huishoudens met een laag inkomen: Volewijck in Noord, De Kolenkit in West en Bijlmer-Centrum in Zuidoost.<p>
+        </div>
+        <div class="col-ois-480">
+					<div class="row">
+						<h3>Nederland &nbsp;&nbsp;= 15,7%<div class="pull-right icon download">&nbsp;</div><div class="pull-right icon info nederland">&nbsp;</div></h3>
+						<hr />
+						<div class="row center">
+							<div class="visualisatie waar huishouden cirkel cirkel1 col-ois-120"></div>
+							<div class="visualisatie waar huishouden cirkel cirkel2 col-ois-120"></div>
+							<div class="visualisatie waar huishouden cirkel cirkel3 col-ois-120"></div>
+							<div class="visualisatie waar huishouden cirkel cirkel4 col-ois-120"></div>
+						</div>
+						<br />
+					</div>
+					<div class="row">
+						<div>
+							<h3>Amsterdam&nbsp;&nbsp;= 24,0%<div class="pull-right icon info amsterdam">&nbsp;</div><div class="pull-right amsterdam icon abs">&nbsp;</div><div class="pull-right amsterdam icon perc">&nbsp;</div></h3>
+							<hr />
+							<div class="visualisatie waar huishouden amsterdam"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-ois-480 col-ois-960">
+					<h3>Huishoudens laag inkomen per wijk</h3>
+					<hr />
+					<div class="visualisatie waar huishouden kaart"></div>
+					<br /><br /><br /><br />
+				</div>
+			</div>
+		</div>
+		<div class="wie persoon page container-full">
+      <div class="row">
+        <div class="col-ois-480">
+          <h2>Per Persoon<div class="pull-right icon info wsm">&nbsp;</div></h2>
+					<hr />
+					<div class="visualisatie wie persoon wsm"></div>
+					<br />
+<p class="justify">Onder jongeren en onder 65-plussers is het aandeel dat in een huishoudens met een laag inkomen leeft hoger dan gemiddeld. Dit zijn groepen die weinig invloed hebben op hun eigen inkomen.</p><p class="justify">Op persoonsniveau kan ook worden gekeken naar herkomst, geslacht en naar de dynamiek van in- en uitstroom. Bij instroom gaat het om personen die in 2012 geen laag huishoudinkomen hadden, maar in 2013 wel. We geven in de figuur aan wat hun huishoudinkomen was in 2012. Bij uitstroom gaat het om personen die in 2012 een laag inkomen hadden, maar in 2013 niet meer. Hier geven we aan wat de hoogte is van het nieuwe inkomen in 2013. Veel personen die uitstromen gaan er nauwelijks op vooruit. En andersom stromen er veel personen in die voorheen een inkomen hadden net boven de armoedegrens.<p>
+        </div>
+        <div class="col-ois-480">
+					<div class="row">
+						<h3>Armoede per leeftijdsgroep<div class="pull-right icon download">&nbsp;</div><div class="pull-right icon info leeftijdsgroep">&nbsp;</div></h3>
+						<hr />
+						<div class="visualisatie wie persoon leeftijdsgroep"></div>
+						<br />
+					</div>
+					<div class="row">
+						<div class="text-left col-ois-160 first">
+							<h3>Herkomst</h3>
+							<hr />
+							<div class="visualisatie wie persoon herkomst"></div>
+							<br />
+						</div>
+						<div class="text-center col-ois-160">
+							<h3>Leeftijd</h3>
+							<hr />
+							<div class="visualisatie wie persoon leeftijd"></div>
+							<br />
+						</div>
+						<div class="text-right col-ois-160 last">
+							<h3>Geslacht</h3>
+							<hr />
+							<div class="visualisatie wie persoon geslacht"></div>
+							<br />
+						</div>
+					</div>
+					<div class="col-ois-480">
+						<h3>In- en uitstroom<div class="pull-right icon info instroom">&nbsp;</div></h3>
+						<hr />
+						<div class="row center">
+							<div class="visualisatie wie persoon instroom col-ois-240"></div>
+							<div class="visualisatie wie persoon uitstroom col-ois-240"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wie huishouden page container-full">
+      <div class="row">
+        <div class="col-ois-480">
+          <h2>Per Huishouden<div class="pull-right icon info wsm">&nbsp;</div></h2>
+					<hr />
+					<div class="visualisatie wie huishouden wsm"></div>
+					<br />
+<p class="justify">Een belangrijk gegeven bij het in kaart brengen van armoede in de stad is de bron van het inkomen. We maken hier het onderscheid tussen inkomen uit werk (eigen onderneming of loondienst), uitkering (bijstand en andere uitkeringen) en pensioen. Om te bepalen wat de voornaamste bron van inkomen van een huishouden is, nemen we de inkomensbestanddelen van alle leden van het huishouden samen. De bron waaruit een huishouden het meeste inkomen ontvangt wordt beschouwd als de belangrijkste bron van inkomen. Er is één uitzondering: als er binnen een huishouden sprake is van een inkomen uit eigen onderneming, wordt dit, ongeacht de hoogte ervan, als de belangrijkste bron van inkomen gezien.<p>
+        </div>
+        <div class="col-ois-480">
+					<div class="row">
+						<div class="text-left col-ois-160 first">
+							<h4>Inkomstenbron</h4>
+							<hr />
+							<div class="visualisatie wie huishouden inkomstenbron"></div>
+							<br />
+						</div>
+						<div class="text-center col-ois-160">
+							<h4>Samenstelling</h4>
+							<hr />
+							<div class="visualisatie wie huishouden samenstelling"></div>
+							<br />
+						</div>
+						<div class="text-right col-ois-160 last">
+							<h4>Langdurig</h4>
+							<hr />
+							<div class="visualisatie wie huishouden duur"></div>
+							<br />
+						</div>
+					</div>
+					<div class="col-ois-480">
+						<h3>Hoogte van het inkomen<div class="pull-right icon download">&nbsp;</div><div class="pull-right icon info verdeling">&nbsp;</div></h3>
+						<hr />
+						<div class="visualisatie wie huishouden verdeling"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bereik page container-full">
+      <div class="row">
+        <div class="col-ois-480">
+          <h2>Per Huishouden<div class="pull-right icon info wsm">&nbsp;</div></h2>
+					<hr />
+					<div class="visualisatie bereik huishouden wsm"></div>
+					<br />
+<p class="justify">Om te berekenen in hoeverre minimaregelingen de doelgroep bereiken moet de omvang van deze doelgroep eerst vastgesteld worden. Vervolgens wordt het aantal toekenningen van een minimaregeling gedeeld door de doelgroep van de betreffende regeling. Voor 2015 maken we een schatting van het bereik.<p>
+        </div>
+        <div class="col-ois-480">
+					<div class="row">
+						<div class="col-ois-480">
+							<h3>Bereik per regeling<div class="pull-right icon download">&nbsp;</div><div class="pull-right icon info regeling">&nbsp;</div></h3>
+							<hr />
+							<div class="visualisatie bereik huishouden regeling"></div>
+						</div>
+					</div>
+					<div class="row page bereik huishouden ov">
+						<br />
+						<p class="justify">Oudere minima kunnen een gratis abonnement ontvangen voor vervoer met het GVB.<p>
+					</div>
+					<div class="row page bereik huishouden scholieren">
+						<br />
+						<p class="justify">Minima met schoolgaande kinderen komen in aanmerking voor de Scholierenvergoeding. Ouders kunnen met deze regeling kosten voor leermiddelen en sport- en cultuurdeelname declareren, bijvoorbeeld huiswerkbegeleiding, theaterbezoek of dansles.<p>
+						<div class="text-left col-ois-160 first">
+							<h3>Uitkering</h3>
+							<hr />
+							<div class="visualisatie bereik huishouden scholieren uitkering"></div>
+						</div>
+						<div class="text-center col-ois-160">
+							<h3>Werk</h3>
+							<hr />
+							<div class="visualisatie bereik huishouden scholieren werk"></div>
+						</div>
+						<div class="text-right col-ois-160 last">
+							<h3>Pensioen</h3>
+							<hr />
+							<div class="visualisatie bereik huishouden scholieren pensioen"></div>
+						</div>
+					</div>
+					<div class="row page bereik huishouden ziektekosten">
+						<br />
+						<p class="justify">De gemeente Amsterdam biedt alle Amsterdamse minima de mogelijkheid om een collectieve zorgverzekering af te sluiten. De collectieve zorgverzekering bestaat uit een basisverzekering en een aanvullend pakket.<p>
+						<div class="text-left col-ois-160 first">
+							<h3>Uitkering</h3>
+							<hr />
+							<div class="visualisatie bereik huishouden ziektekosten uitkering"></div>
+						</div>
+						<div class="text-center col-ois-160">
+							<h3>Werk</h3>
+							<hr />
+							<div class="visualisatie bereik huishouden ziektekosten werk"></div>
+						</div>
+						<div class="text-right col-ois-160 last">
+							<h3>Pensioen</h3>
+							<hr />
+							<div class="visualisatie bereik huishouden ziektekosten pensioen"></div>
+						</div>
+					</div>
+					<div class="row page bereik huishouden stadspas">
+						<br />
+						<p class="justify">Met de Stadspas krijgen minima korting op culturele, sportieve en recreatieve activiteiten.<p>
+						<div class="text-left col-ois-160 first">
+							<h3>Uitkering</h3>
+							<hr />
+							<div class="visualisatie bereik huishouden stadspas uitkering"></div>
+						</div>
+						<div class="text-center col-ois-160">
+							<h3>Werk</h3>
+							<hr />
+							<div class="visualisatie bereik huishouden stadspas werk"></div>
+						</div>
+						<div class="text-right col-ois-160 last">
+							<h3>Pensioen</h3>
+							<hr />
+							<div class="visualisatie bereik huishouden stadspas pensioen"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-ois-480 col-ois-960">
+				<h3 class="kaart titel">Bereik per wijk</h3>
+				<hr />
+				<div class="visualisatie bereik kaart"></div>
+				<br /><br /><br /><br />
+			</div>
+		</div>
+		<div class="infobox justify wat wsm">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">De gemeente Amsterdam gebruikt als inkomensgrens voor een laag inkomen 120% van het wettelijk sociaal minimum (WSM). Het WSM wordt jaarlijks vastgesteld door de Tweede Kamer en de hoogte van de bijstandsuitkering en de AOW worden daaraan gekoppeld. Dat betekent dat huishoudens die bijstand of uitsluitend AOW ontvangen automatisch tot de groep behoren met een laag inkomen.</p><p class="justify">De hoogte van het WSM en van de Amsterdamse lage-inkomensgrens vergelijken we hier met het modaal inkomen in Nederland. Het modaal inkomen is het inkomen dat het vaakst voorkomt in Nederland. Om vast te stellen of iemand een laag inkomen heeft wordt naar het inkomen van het huishouden gekeken. De reden hiervoor is dat het toekennen van uitkeringen en de hoogte daarvan afhankelijk is van de samenstelling van het huishouden. Ook het recht op armoedevoorzieningen hangt af van het huishoudinkomen.<p>
+		</div>
+		<div class="infobox justify wat ontwikkeling">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">De meest recente cijfers over het aandeel huishoudens met een laag inkomen zijn van 2013. De verwachte ontwikkeling voor 2014 en 2015 is dat de armoede in Amsterdam stabiliseert, of zelfs licht daalt. Voor deze raming worden de meest recente gegevens over de koopkrachtontwikkeling en recente gegevens over de ontwikkeling van de (beroeps)bevolking doorgetrokken. De gebruikte systematiek is geïnspireerd door de jaarlijkse landelijke raming van het Sociaal Cultureel Planbureau en is aangepast aan de Amsterdamse context [zie Armoedemonitor, bijlage 2].<p>
+		</div>
+		<div class="infobox justify waar persoon wsm">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">Het huishoudinkomen is leidend om vast te stellen wie een laag inkomen heeft (zie knop ‘huishouden)’. Personen in huishoudens waarvan het inkomen op of onder de armoedegrens ligt (120% van het wettelijk sociaal minimum) behoren tot de populatie met een laag inkomen. De bedragen die hier staan hebben betrekking op een eenpersoonshuishouden.<p>
+		</div>
+		<div class="infobox justify waar persoon kinderen">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">Het aandeel minderjarige kinderen in huishoudens met een laag inkomen is in Amsterdam twee keer zo hoog als landelijk. Dit aandeel is stabiel sinds 2008. Dat is opvallend, aangezien het aandeel van alle personen in huishoudens met een laag inkomen in deze periode wel is gestegen. Bovendien is er in de overige grote steden en landelijk wel een stijging te zien van het aandeel kinderen dat opgroeit in armoede.<p>
+		</div>
+		<div class="infobox justify waar persoon amsterdam">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">Een kwart van alle Amsterdamse minderjarige kinderen groeit op in een huishouden met een inkomen tot 120% van het wettelijk sociaal minimum (WSM). In Zuidoost en Noord is het aandeel kinderen in huishoudens met een laag inkomen veel hoger dan gemiddeld. Getalsmatig heeft Nieuw-West het grootste aantal kinderen in armoede, bijna 8.000.<p>
+		</div>
+    <div class="infobox justify waar huishouden wsm">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">De gemeente Amsterdam gebruikt als inkomensgrens voor een laag inkomen 120% van het wettelijk sociaal minimum (WSM). Het WSM wordt jaarlijks vastgesteld door de Tweede Kamer en de hoogte van de bijstandsuitkering en de AOW worden daaraan gekoppeld. Dat betekent dat huishoudens die bijstand of uitsluitend AOW ontvangen automatisch tot de groep behoren met een laag inkomen.</p><p class="justify">De hoogte van het WSM en van de Amsterdamse lage-inkomensgrens vergelijken we hier met het modaal inkomen in Nederland. Het modaal inkomen is het inkomen dat het vaakst voorkomt in Nederland. Om vast te stellen of iemand een laag inkomen heeft wordt naar het inkomen van het huishouden gekeken. De reden hiervoor is dat het toekennen van uitkeringen en de hoogte daarvan afhankelijk is van de samenstelling van het huishouden. Ook het recht op armoedevoorzieningen hangt af van het huishoudinkomen.<p>
+		</div>
+		<div class="infobox justify waar huishouden nederland">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">In heel Nederland heeft 15,7% van de huishoudens een inkomen tot 120% van het wettelijk sociaal minimum (WSM). De vier grote steden hebben relatief meer huishoudens met een laag inkomen, vooral Rotterdam en Amsterdam.<p>
+		</div>
+		<div class="infobox justify waar huishouden amsterdam">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">Het aandeel huishouden met een laag inkomen verschilt sterk tussen stadsdelen. In Zuidoost heeft 30% van de huishoudens een inkomen tot 120% van het wettelijk sociaal minimum (WSM), dat is tien procentpunt meer dan in Zuid. Getalsmatig heeft West de meeste huishoudens met een laag inkomen.<p>
+		</div>
+		<div class="infobox justify wie huishouden">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+		</div>
+		<div class="infobox justify wie persoon wsm">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">Het huishoudinkomen is leidend om vast te stellen wie een laag inkomen heeft (zie knop ‘huishouden)’. Personen in huishoudens waarvan het inkomen op of onder de armoedegrens ligt (120% van het wettelijk sociaal minimum) behoren tot de populatie met een laag inkomen. De bedragen die hier staan hebben betrekking op een eenpersoonshuishouden.<p>
+		</div>
+		<div class="infobox justify wie persoon instroom">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">De linker figuur laat de instroom zien. Van alle personen met een laag inkomen in 2013 had 27% het jaar daarvoor nog geen laag inkomen. Zij vormen de instroom. Daarbij geven we aan wat de hoogte was van hun huishoudinkomen het jaar daarvoor. Verder stroomt 10% in door geboorte of verhuizing naar Amsterdam zonder inkomensdaling (overige instroom).</p><p class="justify">Rechts gaat het om de uitstroom: de groep personen die in 2012 een laag huishoudinkomen had, en wat hun situatie is in 2013. Van hen had 26% in 2013 geen laag inkomen meer. Daarbij geven we aan wat hun huishoudinkomen is in 2013, behalve voor 10% personen die uitstromen door overlijden of verhuizing uit Amsterdam zonder inkomensverhoging (overige uitstroom).<p>
+		</div>
+		<div class="infobox justify wie persoon leeftijdsgroep">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">Van alle Amsterdammers maakt 21% deel uit van een huishouden met een laag inkomen. Daarin zijn er belangrijke verschillen naar leeftijd. Kinderen, vooral tussen 10 en 14 jaar, groeien relatief vaak op in een huishouden met een laag inkomen. En van alle 65-plussers leeft 29% in een huishouden met een laag inkomen. Amsterdammers tussen 25 en 34 jaar maken het minst vaak deel uit van huishoudens met een laag inkomen.<p>
+		</div>
+		<div class="infobox justify wie huishouden wsm">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">De gemeente Amsterdam gebruikt als inkomensgrens voor een laag inkomen 120% van het wettelijk sociaal minimum (WSM). Het WSM wordt jaarlijks vastgesteld door de Tweede Kamer en de hoogte van de bijstandsuitkering en de AOW worden daaraan gekoppeld. Dat betekent dat huishoudens die bijstand of uitsluitend AOW ontvangen automatisch tot de groep behoren met een laag inkomen.</p><p class="justify">De hoogte van het WSM en van de Amsterdamse lage-inkomensgrens vergelijken we hier met het modaal inkomen in Nederland. Het modaal inkomen is het inkomen dat het vaakst voorkomt in Nederland. Om vast te stellen of iemand een laag inkomen heeft wordt naar het inkomen van het huishouden gekeken. De reden hiervoor is dat het toekennen van uitkeringen en de hoogte daarvan afhankelijk is van de samenstelling van het huishouden. Ook het recht op armoedevoorzieningen hangt af van het huishoudinkomen.<p>
+		</div>
+		<div class="infobox justify wie huishouden verdeling">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">Er is een duidelijke relatie tussen de bron van inkomen en de hoogte van het inkomen. De grootste groep huishoudens met een laag inkomen leeft van bijstand, een andere uitkering of pensioen. Deze huishoudens hebben een inkomen tussen 80 en 110% van het wettelijk sociaal minimum (WSM). Vergeleken met deze groep hebben huishoudens met een inkomen onder 80% WSM en boven 110% WSM vaker een inkomen uit werk. Deze huishoudens hebben overigens vaker een vermogen dat boven de grens ligt om bijstand aan te kunnen vragen.<p>
+		</div>
+		<div class="infobox justify bereik wsm">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">De gemeente Amsterdam gebruikt als inkomensgrens voor een laag inkomen 120% van het wettelijk sociaal minimum (WSM). Het WSM wordt jaarlijks vastgesteld door de Tweede Kamer en de hoogte van de bijstandsuitkering en de AOW worden daaraan gekoppeld. Dat betekent dat huishoudens die bijstand of uitsluitend AOW ontvangen automatisch tot de groep behoren met een laag inkomen.</p><p class="justify">De hoogte van het WSM en van de Amsterdamse lage-inkomensgrens vergelijken we hier met het modaal inkomen in Nederland. Het modaal inkomen is het inkomen dat het vaakst voorkomt in Nederland. Om vast te stellen of iemand een laag inkomen heeft wordt naar het inkomen van het huishouden gekeken. De reden hiervoor is dat het toekennen van uitkeringen en de hoogte daarvan afhankelijk is van de samenstelling van het huishouden. Ook het recht op armoedevoorzieningen hangt af van het huishoudinkomen.<p>
+		</div>	
+		<div class="infobox justify bereik regeling">
+			<h3>Informatie<div class="pull-right icon info">&nbsp;</div></h3>
+			<hr>
+<p class="justify">Deze visualisatie laat voor vier minimaregeling zien welk percentage van de doelgroep de regeling heeft ontvangen. Te zien is bijvoorbeeld dat van alle Amsterdammers die in 2013 recht hadden op een Stadspas, 54% deze ook daadwerkelijk heeft ontvangen.</p><p class="justify">Klikken we vervolgens op “Stadspas” dan zien we dat 66% van de huishoudens met een uitkering een Stadspas had. Van de huishoudens met inkomen uit werk had 17% een Stadspas en van de huishoudens met inkomen uit pensioen 75%.<p>
+		</div>
+	</div>
+  </body>
+</html>

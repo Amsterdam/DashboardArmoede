@@ -1,0 +1,615 @@
+#armoede {
+	font-size: 16px;
+	font-family: corbel!important;
+	line-height: 22px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#armoede h2,
+#armoede h3,
+#armoede h4 {
+	margin: 0px;
+	font-size: 22px;
+	font-weight: 800;    
+	overflow: hidden;
+	margin-top: 5px;
+	height: 33px;
+	padding-top: 10px;
+	font-family: corbel;
+	margin-bottom: 0px;
+	line-height : 1.05;
+}
+
+#armoede h3 {
+	font-size: 18px;
+	line-height: 1.45;
+}
+
+#armoede h4 {
+	font-size: 14px;
+	height: 27px;
+	padding-top: 16px;
+	line-height: 18.5px;
+}
+
+#armoede a.icon {
+	height: 16px;
+	background: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: color 0 ease-in;
+	transition: none;	
+}
+
+#armoede hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+  border: 0;
+	border-top: 1px solid black;
+	margin: 0px 0px 20px 0px;
+}
+
+#armoede p {
+	font-size: 18px;
+	margin: 16px 0px;
+}
+
+#armoede img {
+	max-width: 100%;
+	max-height: 100%;	
+}
+
+#armoede .infobox {
+	visibility: hidden;
+	margin-top: 15px;
+	background: #eee;
+	position: fixed;
+	margin-left: -208px;
+/* OIS site
+	top: 250px;
+	width: 380px;
+*/
+	width: 375px;
+	top: 55px;
+	left: 50%;
+	padding: 0px 20px 20px 20px;
+	-webkit-box-shadow: 9px 9px 9px -8px rgba(0,0,0,0.9);
+	-moz-box-shadow: 9px 9px 9px -8px rgba(0,0,0,0.9);
+	box-shadow: 9px 9px 9px -8px rgba(0,0,0,0.9);
+}
+
+#armoede .text-center {
+	text-align: center;
+}
+
+#armoede .text-right {
+	text-align: right;
+}
+
+#armoede .text-left {
+	text-align: left;
+}
+
+/* .text-condensed {
+	letter-spacing: -7px;
+} */
+
+#armoede .row .icon,
+#armoede .infobox .icon  {
+	width: 20px;
+	height: 20px;
+	margin: 1px 2px 0px 2px;
+	padding: 0px;
+	cursor: pointer;
+}
+/*
+#armoede .row h3 .icon,
+#armoede .infobox .icon  {
+	margin: -2px 2px 0px 2px;
+}
+*/
+#armoede .row .icon.info {
+	background: url("../../assets/img/armoede/info.png");
+	background-size: 20px;
+	background-position: 0px -40px;
+}
+
+#armoede .row .icon.download {
+	text-decoration: none;
+	background: url("../../assets/img/armoede/download.png");
+	background-size: 20px;
+	background-position: 0px -40px;
+}
+
+#armoede .infobox .icon {
+	background: url("../../assets/img/armoede/sluiten.png");
+	background-size: 20px;
+	background-position: 0px -40px;
+}
+
+#armoede .row .icon.perc {
+	background: url("../../assets/img/armoede/procent.png");
+	background-size: 20px;
+	background-position: 0px -40px;
+}
+
+#armoede .row .icon.abs {
+	background: url("../../assets/img/armoede/absoluut.png");
+	background-size: 20px;
+	background-position: 0px -40px;
+}
+
+#armoede .row .icon.info:hover,
+#armoede .row .icon.info.active,
+#armoede .row .icon.download:hover, 
+#armoede .row .icon.download.active,
+#armoede .infobox .icon:hover,
+#armoede .infobox .icon.active,
+#armoede .row .icon.abs:hover,
+#armoede .row .icon.abs.active,
+#armoede .row .icon.perc:hover, 
+#armoede .row .icon.perc.active {
+	background-position: 0px -20px;
+}
+
+#armoede .row .icon.info.disabled, 
+#armoede .row .icon.download.disabled, 
+#armoede .row .icon.abs.disabled,
+#armoede .row .icon.perc.disabled,
+#armoede .infobox .icon.disabled {
+	background-position: 0px 0px;
+}
+
+#armoede .nav .icons .huishouden {
+	background: url("../../assets/img/armoede/huishouden.png");
+	background-size: 22px;
+	background-position: 0px -44px;
+}
+
+#armoede .nav .icons .persoon {
+	background: url("../../assets/img/armoede/persoon.png");
+	background-size: 22px;
+	background-position: 0px -44px;
+}
+
+#armoede .nav .icons .persoon:hover,
+#armoede .nav .icons .persoon.active, 
+#armoede .nav .icons .huishouden:hover,
+#armoede .nav .icons .huishouden.active,
+#armoede .nav .icons .huishouden:hover {
+	background-position: 0px -22px;
+}
+
+#armoede .nav .icons .persoon.disabled,
+#armoede .nav .icons .huishouden.disabled {
+	background-position: 0px 0px;
+	cursor: not-allowed;
+}
+
+#armoede .nav .icons div {
+	background-repeat: no-repeat;
+	height: 22px;
+	width: 22px;
+	margin: 3px;
+	cursor: pointer;
+}
+
+#armoede .row {
+	width: 100%;
+  display: table;
+}
+
+#armoede .row {
+	margin: 0px;
+}
+
+#armoede .justify {
+	text-align: justify;
+	hyphens: auto;
+}
+
+#armoede .container-full {
+	width: 415px;
+	margin: 0 auto;
+}
+
+#armoede .page {
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	height: 0px;
+	display: block;
+}
+
+#armoede .col-ois-480 {
+	width: 415px;
+	max-width: 415px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+
+#armoede .col-ois-120 {
+	width: 91px;
+	margin: 0px 5px 0px 5px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+
+#armoede .col-ois-240 {
+	width: 205px;
+	max-width: 205px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+
+#armoede .col-ois-160 {
+	width: 134px;
+	position: relative;
+	float: left;	
+	overflow: hidden;
+	margin: 0px 5px 0px 5px;
+}
+
+#armoede .row > .col-ois-160.last {
+	margin: 0px;
+}
+
+#armoede .row > .col-ois-160.first {
+	margin: 0px 0px 0px 2px;
+}
+
+#armoede .pull-right {
+	float: right;
+}
+
+#armoede .navbar {
+	background: #eee;
+	width: 100%;
+	padding-top: 4px;
+	/* border-bottom: 1px solid #aaaaaa; */
+}
+
+#armoede .navbar li,
+#armoede h1,
+#armoede h2,
+#armoede h3,
+#armoede h4 {
+	text-transform: uppercase;
+}
+
+#armoede .navbar li.icons {
+	width: 30px;
+}
+
+#armoede .navbar {
+	height: 50px;
+	width: 100%;
+}
+
+#armoede .navbar ul {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	height: 50px;
+	list-style-type: none;
+}
+
+#armoede .navbar ul li {
+	width: 102px;
+	display: table-cell;
+	vertical-align: middle;
+	height: 50px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 22px;
+}
+
+#armoede .navbar ul li a {
+	color: #666666;
+	text-decoration: none;
+}
+
+#armoede .navbar ul li a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+@media (min-width: 1001px) {
+	#armoede .container-full {
+		width: 890px;
+		margin: 0 auto;
+	}
+
+	#armoede .infobox {
+		margin-left: -445px;
+/* OIS site
+		top: 240px;
+		min-width: 835px;
+*/
+		min-width: 830px;
+	}
+
+	#armoede .navbar ul li {
+		width: 210px;
+	}
+
+	#armoede .col-ois-480 {
+		width: 415px;
+		max-width: 415px;
+		margin: 0px;
+	}
+
+	#armoede .col-ois-480:first-child {
+		width: 415px;
+		max-width: 415px;
+		margin-right: 40px;
+		margin-left: 0px;
+	}
+	
+	#armoede .col-ois-480:last-child {
+		width: 415px;
+		max-width: 415px;
+	}
+
+	#armoede .col-ois-960 {
+		width: 830px;
+		min-width: 870px;
+		margin: 0px;
+		position: relative;
+		float: left;
+	}
+}
+
+#armoede .glyphicon.inactief {
+	background-color: #DDDDDD;
+}
+
+#armoede .navbar-default .navbar-nav > .active  {
+	background-color: white;
+}
+
+#armoede .navbar-default .navbar-nav > .active > a,
+#armoede .navbar-default .navbar-nav > .active > a:hover,
+#armoede .navbar-default .navbar-nav > .active > a:focus{
+	color: red;
+}
+
+#armoede .navbar-nav li:first-child {
+	/* border-left: 0px solid black; */
+}
+
+#armoede .navbar-nav li:first-child a,
+#armoede .navbar-nav li:first-child a:hover {
+	text-decoration: none;
+}
+
+#armoede .navbar-nav li.active {
+	/* border-top: 1px solid black; */
+	/* border-left: 1px solid black; */
+}
+
+#armoede .navbar-nav li.active:first-child {
+	/* border-left: 1px solid black; */
+}
+
+#armoede .navbar-default .navbar-nav > .active {
+	/* border-right: 1px solid black; */
+}
+
+#armoede .navbar-default .navbar-nav > li:last-child {
+	/* border-right: 0px solid black; */
+}
+
+#armoede .navbar-default .navbar-nav > li:last-child.active {
+	/* border-right: 1px solid black; */
+}
+
+#armoede .navbar-default .navbar-brand,
+#armoede h1
+#armoede h2 {
+	text-transform: uppercase;
+}
+
+#armoede div.img {
+	width: 100%;
+	text-align: center;
+}
+
+/* Visualisaties */
+
+#armoede .visualisatie {
+	overflow: hidden;	
+}
+
+#armoede .visualisatie.waar.huishouden.cirkel .label {
+	font-weight: 100;
+	font-size: 16px;
+}
+
+#armoede .visualisatie .axis text {
+	fill: #000;
+}
+
+#armoede .visualisatie .axis line,
+#armoede .visualisatie .axis path {
+	stroke: none;
+	fill: none;
+	shape-rendering: crispEdges;
+}
+
+.visualisatie .grid line,
+#armoede .visualisatie .grid path {
+	fill: none;
+	stroke: #ddd;
+}
+
+#armoede .visualisatie.waar.huishouden.wsm,
+#armoede .visualisatie.wat.huishouden.wsm,
+#armoede .visualisatie.wie.huishouden.wsm,
+#armoede .visualisatie.wie.persoon.wsm,
+#armoede .visualisatie.bereik.huishouden.wsm,
+#armoede .visualisatie.waar.persoon.wsm {
+	width: 400px;
+	height: 150px;
+	font-family: Corbel;
+}
+
+#armoede .visualisatie.wat.huishouden.ontwikkeling,
+#armoede .visualisatie.waar.persoon.jongeren {
+	width: 400px;
+	height: 300px;
+	font-family: Corbel;
+}
+
+#armoede .visualisatie.wie.persoon.leeftijdsgroep {
+	width: 400px;
+	height: 200px;
+	font-family: Corbel;
+}
+
+#armoede .visualisatie.bereik.huishouden.regeling {
+	width: 400px;
+	height: 200px;
+	font-size: 14px;
+	font-family: Corbel;
+}
+
+#armoede .visualisatie.bereik.huishouden.regeling .axis {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#armoede .visualisatie.bereik.huishouden.regeling .axis text {
+	fill: #000;
+	font-weight: 800;
+	cursor: pointer;
+}
+
+#armoede .visualisatie.bereik.huishouden.regeling .axis text:hover * {
+	fill: red;
+}
+
+#armoede .visualisatie.bereik.huishouden.regeling .axis .active * {
+	fill: red;
+}
+
+#armoede .visualisatie.wat.huishouden.ontwikkeling .axis path,
+#armoede .visualisatie.wie.persoon.leeftijdsgroep .axis path {
+	stroke: #ddd;
+	fill: none;
+	shape-rendering: crispEdges;
+}
+
+#armoede .visualisatie.waar.huishouden.cirkel {
+	height: 140px;
+	font-size: 13px;
+}
+
+#armoede .visualisatie.waar.huishouden.amsterdam,
+#armoede .visualisatie.waar.persoon.amsterdam {
+	height: 300px;
+	width: 415px;
+}
+
+#armoede .visualisatie.wie.huishouden.verdeling {
+	height: 250px;
+	width: 415px;
+}
+
+#armoede .visualisatie.wie.persoon.leeftijd,
+#armoede .visualisatie.wie.persoon.geslacht,
+#armoede .visualisatie.wie.persoon.herkomst {
+	height: 300px;
+	width: 130px;
+	font-size: 13px;
+}
+
+#armoede .visualisatie.wie.huishouden.inkomstenbron,
+#armoede .visualisatie.wie.huishouden.samenstelling,
+#armoede .visualisatie.wie.huishouden.duur,
+#armoede .visualisatie.bereik.huishouden.scholieren.uitkering,
+#armoede .visualisatie.bereik.huishouden.scholieren.werk,
+#armoede .visualisatie.bereik.huishouden.scholieren.pensioen,
+#armoede .visualisatie.bereik.huishouden.ziektekosten.uitkering,
+#armoede .visualisatie.bereik.huishouden.ziektekosten.werk,
+#armoede .visualisatie.bereik.huishouden.ziektekosten.pensioen,
+#armoede .visualisatie.bereik.huishouden.stadspas.uitkering,
+#armoede .visualisatie.bereik.huishouden.stadspas.werk,
+#armoede .visualisatie.bereik.huishouden.stadspas.pensioen {
+	height: 230px;
+	width: 130px;
+	font-size: 13px;
+}
+
+#armoede .visualisatie.wie.persoon.instroom,
+#armoede .visualisatie.wie.persoon.uitstroom {
+	height: 350px;
+	width: 205px;
+	font-size: 13px;
+}
+
+#armoede .visualisatie.wat.huishouden .legend2,
+#armoede .visualisatie.waar.persoon .legend2,
+#armoede .visualisatie.wie.huishouden .legend2,
+#armoede .desc {
+	font-size: 12px;
+}
+
+#armoede text.dark {
+	fill: #000000;
+}
+
+#armoede text.light {
+	fill: #FFFFFF;
+}
+
+#armoede .visualisatie.kaart {
+	height: 295px;
+	width: 415px;
+}
+
+#armoede .visualisatie.kaart .water {
+	fill: #F0F5FA;
+	shape-rendering: geometricPrecision
+}
+	
+#armoede .visualisatie.kaart .stadsdeel {
+	fill: none;
+	stroke: #ddd;
+	stroke-width: 1px;
+	shape-rendering: geometricPrecision
+}
+
+#armoede .visualisatie.kaart .referentie.bebouwing {
+	fill: #f6f6f6;
+	shape-rendering: geometricPrecision
+}
+
+#armoede .visualisatie.kaart .wijk {
+	stroke: #999;
+	stroke-width: 1px;
+	shape-rendering: geometricPrecision;
+	fill: #fff;
+}
+	
+#armoede .visualisatie.kaart .ringweg {
+	stroke: #666;
+	stroke-width: 3px;
+	fill: none;
+	stroke-linecap: "round";
+	shape-rendering: geometricPrecision
+}
+
+@media (min-width: 1001px) {
+	#armoede .visualisatie.kaart {
+		height: 550px;
+		width: 966px;
+	}
+}
